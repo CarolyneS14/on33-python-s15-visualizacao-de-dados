@@ -7,31 +7,28 @@ Exercicio para casa semana 15.
 
   ### 📚 Descrição da Base:
 
-Base tratada na aula da semana 14 [Olist]() disponivel neste repositório.
+Base tratada na aula da semana 14 [Olist](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/base_vendas_s14_olist.csv) disponivel neste repositório.
 
 Após tratamento minha base de dados ficou assim:
 
- -   Column                         Non-Null Count   Dtype  
----  ------                         --------------   -----  
- 0   order_id                       112650 non-null  object 
- 1   customer_id                    112650 non-null  object 
- 2   order_status                   112650 non-null  object 
- 3   order_purchase_timestamp       112650 non-null  object 
- 4   order_delivered_customer_date  110196 non-null  object 
- 5   order_estimated_delivery_date  112650 non-null  object 
- 6   order_item_id                  112650 non-null  int64  
- 7   product_id                     112650 non-null  object 
- 8   seller_id                      112650 non-null  object 
- 9   shipping_limit_date            112650 non-null  object 
- 10  price                          112650 non-null  float64
- 11  freight_value                  112650 non-null  float64
- 12  customer_city                  112650 non-null  object 
- 13  customer_state                 112650 non-null  object 
- 14  product_category_name          111047 non-null  object 
- 15  seller_city                    112650 non-null  object 
- 16  seller_state                   112650 non-null  object 
-dtypes: float64(2), int64(1), object(14)
-memory usage: 14.6+ MB
+     0   order_id                       
+     1   customer_id                    
+     2   order_status                   
+     3   order_purchase_timestamp       
+     4   order_delivered_customer_date 
+     5   order_estimated_delivery_date 
+     6   order_item_id              
+     7   product_id                  
+     8   seller_id                   
+     9   shipping_limit_date          
+     10  price                          
+     11  freight_value                 
+     12  customer_city                  
+     13  customer_state                 
+     14  product_category_name         
+     15  seller_city                    
+     16  seller_state                    
+
 
 A base original de dados da [Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) é composta por 9 tabelas diferentes, nelas temos informações de:
 - pedidos (olist_orders_dataset)
@@ -57,43 +54,43 @@ Link para consulta do dashboard no tableau Public:
 
 Nesta base de dados, estão disponíveis informações sobre as vendas da Olist, coletadas entre setembro de 2016 e agosto de 2018, abrangendo diversas categorias de produtos em todo o território brasileiro. No gráfico "Quantidade de Produtos por Categoria", podemos observar a distribuição de produtos em cada categoria, permitindo uma análise detalhada da variedade ofertada pela empresa.
 
-![Grafico1]()
+![Grafico1](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Qtd.%20Produtos%20por%20Categoria.png)
 
 No segundo gráfico, "Categorias Mais Vendidas", é possível visualizar as cinco categorias com maior volume de vendas. Em primeiro lugar, temos 'cama, mesa e banho', seguido por 'beleza e saúde', em terceiro 'esporte e lazer', em quarto 'informática e acessórios' e, por fim, 'móveis e decoração'. Ao comparar com o gráfico anterior, notamos uma discrepância: apesar de 'informática e acessórios' estar entre as cinco categorias mais vendidas, ela não está entre as cinco com maior número de produtos disponíveis na base de dados. Essa observação indica que, em geral, as categorias com maior número de produtos tendem a ser as que mais vendem, mas há exceções, sugerindo que outros fatores, como demanda e popularidade, também influenciam as vendas.
 
-![Grafico2]()
+![Grafico2](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Categ.%20Mais%20Vendida.png)
 
 Na terceira análise, "Quantidade de Pedidos por Estado", a tabela mostra a distribuição de pedidos em cada estado. São Paulo (SP) lidera com o maior número de pedidos, seguido pelo Rio de Janeiro (RJ) em segundo lugar, e Minas Gerais (MG) ocupando a terceira posição. Esses três estados concentram a maior quantidade de pedidos registrados na base de dados, refletindo sua relevância no volume de vendas.
 
-![Grafico3]()
+![Grafico3](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Qtd.%20Pedidos%20por%20Estado.png)
 
 No gráfico de barras "Quantidade de Vendedores por Estado", é possível visualizar a distribuição de vendedores por estado, com São Paulo (SP) liderando, seguido pelo Paraná (PR) e, em terceiro lugar, Minas Gerais (MG). Ao comparar este gráfico com a tabela anterior sobre a quantidade de pedidos por estado, percebe-se que os estados com o maior número de vendedores não necessariamente correspondem aos que possuem o maior volume de pedidos. Isso sugere que a presença de muitos vendedores em um estado não garante, por si só, uma alta demanda ou número de vendas.
 
-![Grafico4]()
+![Grafico4](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Qtd.%20Vendedor%20por%20Estado.png)
 
 No gráfico de barras "Quantidade Total de Pedidos por Ano", é possível observar claramente que 2018 foi o ano com o maior número de vendas, totalizando 52.783 pedidos. Esse dado destaca 2018 como o ano de melhor desempenho em termos de volume de pedidos na base analisada.
 
-![Grafico5]()
+![Grafico5](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Qtd.%20Total%20Pedidos%20por%20Ano.png)
 
 Ao analisarmos a base de dados de forma diferente, utilizando o gráfico de linha "Quantidade de Pedidos por Mês/Ano", podemos observar que faltam informações completas para realizar uma comparação precisa das vendas anuais. Tanto 2016 quanto 2018 não possuem dados para todos os meses, o que pode resultar em análises imprecisas. No entanto, ao compararmos os meses disponíveis de 2017 e 2018, é possível identificar um forte aumento nas vendas em 2018, especialmente nos meses de janeiro a agosto. Isso sugere um crescimento significativo no desempenho de vendas nesse período específico.
 
-![Grafico6]()
+![Grafico6](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Qtd.%20Pedidos%20por%20Mes_Ano.png)
 
 No gráfico "Vendas por Mês/Ano", é possível realizar uma análise detalhada mês a mês. Com base nos dados, verificamos que novembro de 2017 foi o mês de maior volume de vendas, registrando um total de 7.289 pedidos. Esse destaque reflete um pico significativo nas vendas durante esse período.
 
-![Grafico7]()
+![Grafico7](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Venda%20por%20M%C3%AAs_Ano.png)
 
 No gráfico de dispersão, a análise revela que não há correlação significativa entre o preço dos produtos e o valor do frete. Isso indica que o valor do frete não está diretamente relacionado ao preço dos itens vendidos, sugerindo que outros fatores, como localização ou peso do produto, podem influenciar os custos de envio.
 
-![Grafico8]()
+![Grafico8](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Gr%C3%A1fico%20de%20Dispers%C3%A3o.png)
 
 No histograma abaixo, observamos a distribuição dos valores de frete. Após análise, constatamos que a maioria dos produtos apresenta um custo de frete entre R$7 e R$20, indicando uma faixa predominante de preço para o envio de mercadorias na base de dados.
 
-![Grafico9]()
+![Grafico9](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Histograma%20Frete.png)
 
 No gráfico de barras abaixo, podemos observar a quantidade de produtos por pedido. A análise revela que, na maioria dos casos, os pedidos contêm apenas um único produto. Essa tendência sugere que os clientes tendem a realizar compras mais específicas em vez de adquirir múltiplos itens por vez. 
 
-![Grafico10]()
+![Grafico10](https://github.com/CarolyneS14/on33-python-s15-visualizacao-de-dados/blob/main/Carolyne-Santos/para-casa/Qtd.%20Produto%20por%20Pedido.png)
 
  ### - Conclusão:
 
