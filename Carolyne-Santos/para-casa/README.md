@@ -109,3 +109,5 @@ Em síntese, a análise revela que a Olist possui um desempenho sólido em deter
 
 ## 👩🏻‍🏫 Professora Patrícia Bongiovanni Catandi.
 [GitHub](https://github.com/patriciacatandi "Patricia Catandi")
+
+[Material](https://www.canva.com/design/DAGNLFccGPo/sxmdRHdpY1KzmTVzQ-zCEQ/edit)
